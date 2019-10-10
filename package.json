@@ -1,0 +1,18 @@
+{
+  "name": "minmap",
+  "version": "0.0.1",
+  "description": "React Native Crash Mapping Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scm:android": "react-native bundle --platform android --entry-file index.js --dev false --bundle-output ./android/main.jsbundle --assets-dest ./android --sourcemap-output ./android/sourcemap.js",
+    "scm:ios": "react-native bundle --platform ios --entry-file index.js --dev false --bundle-output ./ios/main.jsbundle --assets-dest ./ios --sourcemap-output ./sourcemap.js",
+    "start": "node index"
+  },
+  "author": "mejiamariano8.08@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "source-map": "0.6.1"
+  }
+}
